@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/post_ONE/",
+    "title": "Welcome to blog5",
+    "description": "Welcome to our new blog, blog5. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Jim",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-07-29",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-07-29T15:05:30-07:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to blog5",
     "description": "Welcome to our new blog, blog5. We hope you enjoy \nreading what we have to say!",
@@ -14,6 +31,6 @@
     "contents": "\n\n\n\n",
     "preview": {},
     "last_modified": "2021-07-29T14:59:52-07:00",
-    "input_file": "welcome.knit.md"
+    "input_file": {}
   }
 ]

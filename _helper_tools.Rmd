@@ -55,6 +55,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ## individual
   rmarkdown::render("~/code/blog5/_posts/welcome/welcome.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/post_ONE/welcome.Rmd")
 
 
 
