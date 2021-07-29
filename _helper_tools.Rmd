@@ -53,6 +53,10 @@ knitr::opts_chunk$set(echo = TRUE,
 ##
   render_site("~/code/blog5")
 
+## individual
+  rmarkdown::render("~/code/blog5/_posts/welcome/welcome.Rmd")
+
+
 
 ## new post
   distill::create_post(title= "snippet_05",
