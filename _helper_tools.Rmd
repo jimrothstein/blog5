@@ -1,0 +1,66 @@
+---
+title: "`r knitr::current_input()`"
+date: "`r paste('last updated', 
+    format(lubridate::now(), ' %d %B %Y'))`"
+output:   
+  html_document:  
+        code_folding: show
+        toc: true 
+        toc_depth: 2
+        toc_float: true
+        mathjax: default
+  pdf_document:   
+    latex_engine: xelatex  
+    toc: true
+    toc_depth:  2   
+fontsize: 11pt   
+geometry: margin=0.4in,top=0.25in   
+---
+### MY NOTES, for Distill
+
+```{r setup, include=FALSE		}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "      ##",
+                      error = TRUE,
+                      collapse = FALSE   ) # easier to read
+```
+
+
+```{r eval=F, include = F}
+
+{
+  library(distill)
+  library(rmarkdown)
+}
+
+## 
+  getwd()
+  site_generator()
+  x  <- site_config()
+  x$output_dir
+  x$repository_url
+
+
+
+## clean
+{
+  clean_site()
+  rmarkdown::clean_site(preview = F)
+}
+
+##
+  render_site("~/code/blog6")
+
+
+## new post
+  distill::create_post(title= "snippet_05",
+  collecton = "_snippets",
+  author = "jim",
+  slug = "_snippets",
+  edit = F
+  )
+
+# new blog (run from /code)
+  distill::create_blog(dir=".", title="blog5")
+```
+
