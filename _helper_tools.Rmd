@@ -59,6 +59,9 @@ knitr::opts_chunk$set(echo = TRUE,
 
   # used distill create_post
   rmarkdown::render("~/code/blog5/_posts/2021-07-29-posttwo/posttwo.Rmd")
+
+  # used copy & paste of files
+  rmarkdown::render("~/code/blog5/_posts/2021-07-29-postthree/postthree.Rmd")
   
 
 
