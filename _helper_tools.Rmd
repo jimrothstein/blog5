@@ -50,10 +50,10 @@ knitr::opts_chunk$set(echo = TRUE,
   rmarkdown::clean_site(preview = F)
 }
 
-##
+## ( says it processes in blog5/_posts/...)
   render_site("~/code/blog5")
 
-## individual
+## individual (puts file in blog5/docs/posts/....)
   rmarkdown::render("~/code/blog5/_posts/welcome/welcome.Rmd")
   rmarkdown::render("~/code/blog5/_posts/post_ONE/welcome.Rmd")
 
