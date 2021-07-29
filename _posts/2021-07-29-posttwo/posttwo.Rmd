@@ -1,0 +1,24 @@
+---
+title: "post_TWO"
+description: |
+  A short description of the post.
+author:
+  - name: Jim
+    url: https://example.com/norajones
+date: 07-29-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+post_TWO
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+file <- "_posts/2021-07-29-posttwo/posttwo.Rmd"
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+
