@@ -1,5 +1,56 @@
 [
   {
+    "path": "posts/2021-08-14-install-notes/",
+    "title": "post_upgrade_notes",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Jim",
+        "url": {}
+      }
+    ],
+    "date": "2021-08-14",
+    "categories": [],
+    "contents": "\nR Update Notes\n\nEach time I update R, I seem to run into trouble with one or more directories that R uses. The reasons probably relate to switching from RStudio to another IDE (neovim) or compiling from source one time and using binaries the next.\nTo sort it out, I found this the Ubuntu/Debian instructions helpful: https://ftp.osuosl.org/pub/cran/bin/linux/debian\nBut first, I had to remove all the old R installations. Then I followed directions for Debian binary installation. In particular, the section https://ftp.osuosl.org/pub/cran/bin/linux/debian explains where the environment variables are set.\nSo here I collect useful R environment variables I found to be important. To ease navigation, I also set shell environment variables (I use zsh ) to match R. Of course, your experience will differ, but getting a good grasp on the R environment variables may avoid some future pain.\n\n\nR_env  <- c(\"R_HOME\", \n            \"R_LIBS_USER\", \n            \"R_LIBS_SITE\",\n            NA,\n            NA) \n\npaths  <- c(\"/usr/lib/R/\",\n            \"/home/jim/R/x86_64-pc-linux-gnu-library/4.1/\",\n            \"/usr/lib/R/library/\",\n            \"/etc/R/Renviron\",\n            \"~/.Renviron\")\n\nzsh_env  <- c(\"R_HOME\", \n            \"R_LIBS_USER\", \n            \"R_LIBS_SITE\",\n            NA,\n            NA)\n\n\n\ndt  <- data.table(R_env = R_env,\n                  path = paths,\n                  zsh_env = zsh_env)\n\n\ndt %>% knitr::kable()\n\n\nR_env\npath\nzsh_env\nR_HOME\n/usr/lib/R/\nR_HOME\nR_LIBS_USER\n/home/jim/R/x86_64-pc-linux-gnu-library/4.1/\nR_LIBS_USER\nR_LIBS_SITE\n/usr/lib/R/library/\nR_LIBS_SITE\nNA\n/etc/R/Renviron\nNA\nNA\n~/.Renviron\nNA\n\nSpecial notes\nEnding slash indicates a directory: /usr/lib/R/library/\nA file has no ending slash: ~/.Renviron\nThe file Renviron in directory /etc/R/ sets many environment variables, including $R_LIBS_SITE, which designates one more directories for packages.\nI modified this to include only one directory: /usr/lib/R/library/\nBecause there are a couple of ways to install R packages (from Debian, from source, from inside R, …) I may decide to modify this later to expand possibily directories for R packages.\n(future) There are other environment variables that may be useful, for example R_ENVIRON, R_ENVIRON_USER but I did not use these.\nHere is one way to confirm which directories R is using for packages.\n\n\n.libPaths()\n\n\n      ## [1] \"/home/jim/R/x86_64-pc-linux-gnu-library/4.1\"\n      ## [2] \"/usr/lib/R/library\"\n\nAnother way is through Sys.getenv() to find R env variables\nR_HOME\nR_LIBS_SITE\nR_LIBS_USER\n\n\ns  <- Sys.getenv()\nnames  <- names(s)\nhead(names)\n\n\n      ## [1] \"_R_CHECK_COMPILATION_FLAGS_KNOWN_\"\n      ## [2] \"API_KEY\"                          \n      ## [3] \"APPDIR\"                           \n      ## [4] \"APPIMAGE\"                         \n      ## [5] \"COLORTERM\"                        \n      ## [6] \"COLUMNS\"\n\nhead(s[grep(pattern = \"^R\", x = names)])\n\n\n      ## R_ARCH               \n      ## R_BROWSER            xdg-open\n      ## R_BZIPCMD            /bin/bzip2\n      ## R_DEFAULT_PACKAGES   \n      ## R_DOC_DIR            /usr/share/R/doc\n      ## R_GZIPCMD            /bin/gzip -n\n\ns[grep(pattern = \"^R_LIBS\", x = names)]\n\n\n      ## R_LIBS               \n      ## R_LIBS_SITE          /usr/lib/R/library\n      ## R_LIBS_USER          ~/R/x86_64-pc-linux-gnu-library/4.1\n\n\n\nif (F) help(.libPaths)\n\n\n\nTroubleshooting\nR –vanilla\nRunning RStudio requires R be compiled with ….\nOrignal motivation for this particular upgrade was to install RStudio (I normally use neovim + nvim-R plug in) and have not installed RStudio.\nUnfortunately, I did not do this; RStudio’s error msg not too friendly.\nI decided to use R binaries, and so followed this webpage https://ftp.osuosl.org/pub/cran/ and this …. R –vanilla worked, but not R. Problems with where installed R puts things, local, lib etc.\n\n\nknitr::knit_exit()\n\n\n\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-15T15:03:10-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-07-29-postthree/",
+    "title": "post_THREE",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Jim",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-07-29",
+    "categories": [],
+    "contents": "\npost_THREE\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-07-29T15:25:20-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-07-29-posttwo/",
+    "title": "post_TWO",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Jim",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-07-29",
+    "categories": [],
+    "contents": "\npost_TWO\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-07-29T15:20:34-07:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/post_ONE/",
     "title": "Welcome to blog5",
     "description": "Welcome to our new blog, blog5. We hope you enjoy \nreading what we have to say!",
@@ -31,40 +82,6 @@
     "contents": "\n\n\n\n",
     "preview": {},
     "last_modified": "2021-07-29T15:28:28-07:00",
-    "input_file": "welcome.knit.md"
-  },
-  {
-    "path": "posts/2021-07-29-posttwo/",
-    "title": "post_TWO",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Jim",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2021-07-29",
-    "categories": [],
-    "contents": "\npost_TWO\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-07-29T15:20:34-07:00",
-    "input_file": "posttwo.knit.md"
-  },
-  {
-    "path": "posts/2021-07-29-postthree/",
-    "title": "post_THREE",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Jim",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2021-07-29",
-    "categories": [],
-    "contents": "\npost_THREE\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-07-29T15:25:20-07:00",
-    "input_file": "postthree.knit.md"
+    "input_file": {}
   }
 ]
