@@ -1,19 +1,11 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
-      "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-08-16T00:00:58-07:00"
-    },
-    {
       "path": "index.html",
       "title": "blog5",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-16T00:17:16-07:00"
+      "last_modified": "2021-08-16T00:21:15-07:00"
     }
   ],
   "collections": ["posts/posts.json"]
