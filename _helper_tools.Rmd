@@ -53,6 +53,7 @@ knitr::opts_chunk$set(echo = TRUE,
 ## SECOND
 ## ( says it processes in blog5/_posts/...)
   render_site("~/code/blog5")
+### This one works...
   render_site("~/code/blog5/index.Rmd")
 
 ## FIRST

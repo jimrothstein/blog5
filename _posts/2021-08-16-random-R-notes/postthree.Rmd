@@ -14,8 +14,6 @@ Misc R
 
 
 
-Output created: /home/jim/code/blog5/docs/posts/2021-08-16-random-R-notes
-/index.html
 ```{r users, child=c(normalizePath("~/code/try_things_here/BASE/0296_base_R_misc.Rmd"))}
 
 ```
