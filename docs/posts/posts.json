@@ -17,6 +17,23 @@
     "input_file": {}
   },
   {
+    "path": "posts/2021-08-16-random-R-notes/",
+    "title": "R odds and ends ",
+    "description": "R odds & ends",
+    "author": [
+      {
+        "name": "Jim",
+        "url": {}
+      }
+    ],
+    "date": "2021-08-14",
+    "categories": [],
+    "contents": "\nMisc R\nbase R only, collect here\nunlist\ndput\nsave\n\nif else\n\n\n\n# ======================\n## if - else if - else\n# ======================\n\nf  <- function(x) {\n  if (x <0) {cat(\"less than 0\")}\n  else if(x<1) {cat(\"less than 1\")}\n  else if(x<2) {cat(\"less than 2\")}\n  else if(x<3) {cat(\"less than 3\")}\n  else if(x<4) {cat(\"less than 4\")}\n  else {cat(\"4 or greater\")}\n}\n\nx <- -1\nf(x)\n\n\n      ## less than 0\n\nf(x <- x+1)\n\n\n      ## less than 1\n\nf(x  <- x+1)\n\n\n      ## less than 2\n\nf(x  <- x+1)\n\n\n      ## less than 3\n\nx\n\n\n      ## [1] 2\n\nifelse(boolean, true , false) very useful\n\n\n\n\n#  \n# ======================\n##    ifelse\n# ======================\nifelse(5>3, \"yes\", \"no\")\n\n\n      ## [1] \"yes\"\n\n\nx  <- c(1,5,10)\n# return vector of length(x) and each element 'yes' or 'no'\nifelse(x > 5, \"yes\", \"no\")  # 'no' 'no' 'yes'\n\n\n      ## [1] \"no\"  \"no\"  \"yes\"\n\nswitch\n\n\n\nx<-2\nx  <- \"B\"\nx  <- 3\nbase::switch(x, \"first\", \n             B = \"second\",\n             C = \"third\"\n)\n\n\n      ## [1] \"third\"\n\n\n\nchoose  <- function(x) {\n\n    base::switch(x, \"first\", \n             B = \"second\",\n             C = \"third\",\n             x\n)\n\n}\n\nx  <- 3\nx <- 100\nchoose(x)\n\n\n\nin named vector, names are attributes\n\n\n# ----------------------\n## create named vector\n# ----------------------\n    x  <- 1:5\n    # [1] 1 2 3 4 5\n\n    names(x)  <- letters[1:5]\n    x\n\n\n      ## a b c d e \n      ## 1 2 3 4 5\n\n    # a b c d e \n    # 1 2 3 4 5 \n\n    attributes(x)\n\n\n      ## $names\n      ## [1] \"a\" \"b\" \"c\" \"d\" \"e\"\n\n\n\n# ----------------------------------------\n## now, remove the names: couple of ways\n# ----------------------------------------\n\n  x.1  <- unname(x)\n# [1] 1 2 3 4 5\n\n\n## another way to remove names\n  x.2  <- x\n  names(x.2)  <- NULL\n  x.2\n\n\n      ## [1] 1 2 3 4 5\n\n# [1] 1 2 3 4 5\n\n## also\n  x.3  <- as.numeric(x)\n# [1] 1 2 3 4 5\n\n\n\nexpand relative file name\n\n\n\nfile <- \"BASE/0296_base_R_misc.Rmd\"\nnormalizePath(file)\n\n\n      ## [1] \"BASE/0296_base_R_misc.Rmd\"\n\npath.expand(file)\n\n\n      ## [1] \"BASE/0296_base_R_misc.Rmd\"\n\npath.expand(\"~\")\n\n\n      ## [1] \"/home/jim\"\n\n\n```{.r .distill-force-highlighting-css}\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-15T23:57:25-07:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-07-29-postthree/",
     "title": "post_THREE",
     "description": "A short description of the post.",

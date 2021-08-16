@@ -53,6 +53,7 @@ knitr::opts_chunk$set(echo = TRUE,
 ## SECOND
 ## ( says it processes in blog5/_posts/...)
   render_site("~/code/blog5")
+  render_site("~/code/blog5/index.Rmd")
 
 ## FIRST
 ## individual (puts file in blog5/docs/posts/....)
@@ -66,6 +67,7 @@ knitr::opts_chunk$set(echo = TRUE,
   # used copy & paste of files
   rmarkdown::render("~/code/blog5/_posts/2021-07-29-postthree/postthree.Rmd")
   rmarkdown::render("~/code/blog5/_posts/2021-08-14-install-notes/postthree.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/2021-08-16-random-R-notes/postthree.Rmd")
   
 
 
