@@ -54,7 +54,7 @@ knitr::opts_chunk$set(echo = TRUE,
 ## ( says it processes in blog5/_posts/...)
   render_site("~/code/blog5")
 ### This one works...
-  render_site("~/code/blog5/index.Rmd")
+  rmarkdown::render_site("~/code/blog5/index.Rmd")
 
 ## FIRST
 ## individual (puts file in blog5/docs/posts/....)
@@ -69,6 +69,9 @@ knitr::opts_chunk$set(echo = TRUE,
   rmarkdown::render("~/code/blog5/_posts/2021-07-29-postthree/postthree.Rmd")
   rmarkdown::render("~/code/blog5/_posts/2021-08-14-install-notes/postthree.Rmd")
   rmarkdown::render("~/code/blog5/_posts/2021-08-16-random-R-notes/postthree.Rmd")
+
+  rmarkdown::render("~/code/blog5/_posts/2021-08-17-reading/posttwo.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/reading_list/posttwo.Rmd")
   
 
 

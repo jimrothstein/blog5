@@ -1,0 +1,23 @@
+---
+title: "Useful reading"
+description: |
+  reading 
+author:
+  - name: Jim
+date: 07-29-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r users, child=c("~/docs/misc_files/001_R_stats_tech_reading.md")}
+```
+
+
+
+
