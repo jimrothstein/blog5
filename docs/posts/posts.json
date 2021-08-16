@@ -52,19 +52,19 @@
   },
   {
     "path": "posts/2021-07-29-posttwo/",
-    "title": "post_TWO",
-    "description": "A short description of the post.",
+    "title": "R users",
+    "description": "!so [r] users who write so well !",
     "author": [
       {
         "name": "Jim",
-        "url": "https://example.com/norajones"
+        "url": {}
       }
     ],
     "date": "2021-07-29",
     "categories": [],
-    "contents": "\npost_TWO\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "contents": "\nStackoverflow users.\nStackoverflow Users\nhttps://stackoverflow.com/users/3732271/akrun\nhttps://stackoverflow.com/users/134830/richie-cotton\nhttps://stackoverflow.com/users/712603/david-robinson\nStackoverflow Tags\nhttps://stackoverflow.com/questions/tagged/r+regex\nhttps://stackoverflow.com/questions/tagged/r+data.table\nhttps://math.stackexchange.com/questions/tagged/linear-algebra?tab=Votes\nhttps://stats.stackexchange.com/questions/tagged/regression?tab=Votes\nzsh: https://unix.stackexchange.com/questions/tagged/zsh?tab=Votes\nVideo Collections\nNY: https://www.youtube.com/playlist?list=PLlzRFZmxVl9QqpFSfkv6JdYrg29xFwxRt\nBlogs\nDavid Robinson: http://varianceexplained.org/\nRafa Irizarry, Roger Peng, and Jeff Leek https://simplystatistics.org/\nRStudio: https://blog.rstudio.com/\nLearning Machines: entertaining: https://blog.ephorie.de/\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-07-29T15:20:34-07:00",
+    "last_modified": "2021-08-16T00:26:49-07:00",
     "input_file": {}
   },
   {

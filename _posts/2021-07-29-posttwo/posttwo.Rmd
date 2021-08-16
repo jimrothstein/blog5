@@ -1,24 +1,25 @@
 ---
-title: "post_TWO"
+title: "R users"
 description: |
-  A short description of the post.
+  !so [r] users who write so well !
 author:
   - name: Jim
-    url: https://example.com/norajones
 date: 07-29-2021
 output:
   distill::distill_article:
     self_contained: false
 ---
-post_TWO
+
+Stackoverflow users.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-file <- "_posts/2021-07-29-posttwo/posttwo.Rmd"
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+```{r users, child=c("~/docs/misc_files/001_R_stats_tech_users.md")}
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+```
+
+
 
 
