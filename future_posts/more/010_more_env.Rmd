@@ -1,0 +1,99 @@
+---
+title: "Frank Hermosillo"
+image: "frank.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/"
+  - label: Twitter
+    url: "https://twitter.com/"
+  - label: GitHub
+    url: "https://github.com/"
+  - label: Email
+    url: "mailto:email@email.com"
+output:
+  postcards::trestles
+categories:
+  -  env
+---
+ 
+
+
+Exploring R base functions related to enviroment.
+
+This is meant as examples of use, and NOT as a tutorial or explanation of R's
+environmental structure.   Others do this much better:  
+  -   
+
+```{r setup, include=FALSE		}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "      ##",
+                      error = TRUE,
+                      collapse = TRUE)
+```
+
+
+```{r library, include=FALSE		}
+library(jimTools)
+``` 
+
+ls() returns objects in character vector.
+```{r simple}
+ls()  <- NULL
+x  <- 2
+y  <- 2*x
+ls()
+```
+
+ls() includes name of functions.
+```{r add_fun}
+ls()
+f  <- function() {
+  z  <- 2
+}
+
+ls()  # includes f
+```
+
+environment is ....
+environment() returns <env>, one of R's typeof
+```{r}
+environment()
+typeof(environment())
+```
+
+in fact,  R has a whole tree of environments
+search
+```{r search}
+search()
+```
+
+objects inside a package
+```{r}
+
+# 1st 9
+ls(envir=as.environment("package:usethis"))[1:9]
+```
+
+
+
+
+ls(envir=as.environment("package:usethis"))
+And you can add your own, sometimes R creates its won.
+
+Example, Modify f 
+```{r modify_f}
+ls()
+
+f  <- function() {
+  z  <- 2
+  print(environment())
+  print(ls())
+}
+
+ls()  # includes f and g
+
+```
+
+```{r f}
+f()
+```
