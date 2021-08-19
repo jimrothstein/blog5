@@ -1,16 +1,14 @@
---- 
-title: "ls_objects"  
-date: "`r paste('last updated', 
-    format(lubridate::now(), '%H:%M, %d %B %Y'))`"  
-output: 
-  pdf_document: 
-    latex_engine: xelatex
-toc: TRUE 
-toc_depth:  1 
-fontsize: 12pt 
-geometry: margin=0.5in,top=0.25in 
 ---
-
+title: "ls_objects"
+description: |
+  Objects in environment 
+author:
+  - name: Jim
+date:  "2021-08-18"
+output:
+  distill::distill_article:
+    self_contained: false
+---
 
 Exploring R base function related to enviroment.
 
@@ -19,6 +17,7 @@ environmental structure.   Others do this much better:
   -   
 
 ```{r setup, include=FALSE		}
+file <- "/home/jim/code/blog5/_posts/environ/0000_ls_objects.Rmd"
 knitr::opts_chunk$set(echo = TRUE,
                       comment = "      ##",
                       error = TRUE,
@@ -26,11 +25,8 @@ knitr::opts_chunk$set(echo = TRUE,
 ```
 
 
-```{r library, include=FALSE		}
-library(jimTools)
-``` 
+#### ls() returns objects in character vector.
 
-ls() returns objects in character vector.
 ```{r simple}
 ls()  <- NULL
 x  <- 2
@@ -96,13 +92,9 @@ f()
 
 
 
-```{r knit_exit(), eval= FALSE    } 
-knitr::knit_exit()
-```
 
-/newpage
 
-```{r render, eval=FALSE	} 
+```{r render, eval=FALSE, include=F	} 
 file  <- "0000_ls_objects.Rmd"
 rmarkdown::render(file,
                   output_dir="~/Downloads/print_and_delete")

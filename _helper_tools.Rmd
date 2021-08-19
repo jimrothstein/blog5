@@ -72,6 +72,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
   rmarkdown::render("~/code/blog5/_posts/2021-08-17-reading/posttwo.Rmd")
   rmarkdown::render("~/code/blog5/_posts/reading_list/posttwo.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/environ/0000_ls_objects.Rmd")
   
 
 
