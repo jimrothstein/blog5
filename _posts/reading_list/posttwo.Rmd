@@ -14,7 +14,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
+#### Some of the books I find useful:
 ```{r users, child=c("~/docs/misc_files/001_R_stats_tech_reading.md")}
 ```
 

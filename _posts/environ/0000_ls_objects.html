@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["0000_ls_objects_files/anchor-4.2.2/anchor.min.js","0000_ls_objects_files/bowser-1.9.3/bowser.min.js","0000_ls_objects_files/distill-2.2.21/template.v2.js","0000_ls_objects_files/header-attrs-2.10/header-attrs.js","0000_ls_objects_files/jquery-1.11.3/jquery.min.js","0000_ls_objects_files/popper-2.6.0/popper.min.js","0000_ls_objects_files/tippy-6.2.7/tippy-bundle.umd.min.js","0000_ls_objects_files/tippy-6.2.7/tippy-light-border.css","0000_ls_objects_files/tippy-6.2.7/tippy.css","0000_ls_objects_files/tippy-6.2.7/tippy.umd.min.js","0000_ls_objects_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1494,12 +1494,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>      ##  [1] &quot;bundle&quot;                  &quot;f&quot;                      
-      ##  [3] &quot;file&quot;                    &quot;get_batch&quot;              
-      ##  [5] &quot;get_query_params&quot;        &quot;get_query_params.videos&quot;
-      ##  [7] &quot;global_params&quot;           &quot;jim_lib&quot;                
-      ##  [9] &quot;query_params&quot;            &quot;videos&quot;                 
-      ## [11] &quot;x&quot;                       &quot;y&quot;</code></pre>
+<pre><code>      ##  [1] &quot;choose&quot;  &quot;choose2&quot; &quot;f&quot;       &quot;file&quot;    &quot;jim_lib&quot; &quot;x&quot;      
+      ##  [7] &quot;x.1&quot;     &quot;x.2&quot;     &quot;x.3&quot;     &quot;y&quot;</code></pre>
 </div>
 ls() includes name of functions.
 <div class="layout-chunk" data-layout="l-body">
@@ -1507,12 +1503,8 @@ ls() includes name of functions.
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>      ##  [1] &quot;bundle&quot;                  &quot;f&quot;                      
-      ##  [3] &quot;file&quot;                    &quot;get_batch&quot;              
-      ##  [5] &quot;get_query_params&quot;        &quot;get_query_params.videos&quot;
-      ##  [7] &quot;global_params&quot;           &quot;jim_lib&quot;                
-      ##  [9] &quot;query_params&quot;            &quot;videos&quot;                 
-      ## [11] &quot;x&quot;                       &quot;y&quot;</code></pre>
+<pre><code>      ##  [1] &quot;choose&quot;  &quot;choose2&quot; &quot;f&quot;       &quot;file&quot;    &quot;jim_lib&quot; &quot;x&quot;      
+      ##  [7] &quot;x.1&quot;     &quot;x.2&quot;     &quot;x.3&quot;     &quot;y&quot;</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>f</span>  <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>{</span>
   <span class='va'>z</span>  <span class='op'>&lt;-</span> <span class='fl'>2</span>
@@ -1521,12 +1513,8 @@ ls() includes name of functions.
 <span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span><span class='op'>(</span><span class='op'>)</span>  <span class='co'># includes f</span>
 </code></pre>
 </div>
-<pre><code>      ##  [1] &quot;bundle&quot;                  &quot;f&quot;                      
-      ##  [3] &quot;file&quot;                    &quot;get_batch&quot;              
-      ##  [5] &quot;get_query_params&quot;        &quot;get_query_params.videos&quot;
-      ##  [7] &quot;global_params&quot;           &quot;jim_lib&quot;                
-      ##  [9] &quot;query_params&quot;            &quot;videos&quot;                 
-      ## [11] &quot;x&quot;                       &quot;y&quot;</code></pre>
+<pre><code>      ##  [1] &quot;choose&quot;  &quot;choose2&quot; &quot;f&quot;       &quot;file&quot;    &quot;jim_lib&quot; &quot;x&quot;      
+      ##  [7] &quot;x.1&quot;     &quot;x.2&quot;     &quot;x.3&quot;     &quot;y&quot;</code></pre>
 </div>
 environment is …. environment() returns <env>, one of R’s typeof
 <div class="layout-chunk" data-layout="l-body">
@@ -1548,13 +1536,12 @@ in fact, R has a whole tree of environments search
 </code></pre>
 </div>
 <pre><code>      ##  [1] &quot;.GlobalEnv&quot;        &quot;package:rmarkdown&quot; &quot;package:distill&quot;  
-      ##  [4] &quot;devtools_shims&quot;    &quot;package:youtube &quot;  &quot;package:testthat&quot; 
-      ##  [7] &quot;package:nvimcom&quot;   &quot;package:stats&quot;     &quot;package:graphics&quot; 
-      ## [10] &quot;package:grDevices&quot; &quot;package:utils&quot;     &quot;package:datasets&quot; 
-      ## [13] &quot;package:xfun&quot;      &quot;package:sloop&quot;     &quot;package:here&quot;     
-      ## [16] &quot;package:lobstr&quot;    &quot;package:rlang&quot;     &quot;package:devtools&quot; 
-      ## [19] &quot;package:usethis&quot;   &quot;package:reprex&quot;    &quot;package:methods&quot;  
-      ## [22] &quot;Autoloads&quot;         &quot;package:base&quot;</code></pre>
+      ##  [4] &quot;package:nvimcom&quot;   &quot;package:stats&quot;     &quot;package:graphics&quot; 
+      ##  [7] &quot;package:grDevices&quot; &quot;package:utils&quot;     &quot;package:datasets&quot; 
+      ## [10] &quot;package:xfun&quot;      &quot;package:sloop&quot;     &quot;package:here&quot;     
+      ## [13] &quot;package:lobstr&quot;    &quot;package:rlang&quot;     &quot;package:devtools&quot; 
+      ## [16] &quot;package:usethis&quot;   &quot;package:reprex&quot;    &quot;package:methods&quot;  
+      ## [19] &quot;Autoloads&quot;         &quot;package:base&quot;</code></pre>
 </div>
 objects inside a packagea
 <div class="layout-chunk" data-layout="l-body">
@@ -1577,12 +1564,8 @@ Example, Modify f
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>      ##  [1] &quot;bundle&quot;                  &quot;f&quot;                      
-      ##  [3] &quot;file&quot;                    &quot;get_batch&quot;              
-      ##  [5] &quot;get_query_params&quot;        &quot;get_query_params.videos&quot;
-      ##  [7] &quot;global_params&quot;           &quot;jim_lib&quot;                
-      ##  [9] &quot;query_params&quot;            &quot;videos&quot;                 
-      ## [11] &quot;x&quot;                       &quot;y&quot;</code></pre>
+<pre><code>      ##  [1] &quot;choose&quot;  &quot;choose2&quot; &quot;f&quot;       &quot;file&quot;    &quot;jim_lib&quot; &quot;x&quot;      
+      ##  [7] &quot;x.1&quot;     &quot;x.2&quot;     &quot;x.3&quot;     &quot;y&quot;</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r">
 <span class='va'>f</span>  <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>{</span>
@@ -1594,19 +1577,15 @@ Example, Modify f
 <span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span><span class='op'>(</span><span class='op'>)</span>  <span class='co'># includes f and g</span>
 </code></pre>
 </div>
-<pre><code>      ##  [1] &quot;bundle&quot;                  &quot;f&quot;                      
-      ##  [3] &quot;file&quot;                    &quot;get_batch&quot;              
-      ##  [5] &quot;get_query_params&quot;        &quot;get_query_params.videos&quot;
-      ##  [7] &quot;global_params&quot;           &quot;jim_lib&quot;                
-      ##  [9] &quot;query_params&quot;            &quot;videos&quot;                 
-      ## [11] &quot;x&quot;                       &quot;y&quot;</code></pre>
+<pre><code>      ##  [1] &quot;choose&quot;  &quot;choose2&quot; &quot;f&quot;       &quot;file&quot;    &quot;jim_lib&quot; &quot;x&quot;      
+      ##  [7] &quot;x.1&quot;     &quot;x.2&quot;     &quot;x.3&quot;     &quot;y&quot;</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>f</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>      ## &lt;environment: 0x55cdd1dc1088&gt;
+<pre><code>      ## &lt;environment: 0x55e394352d58&gt;
       ## [1] &quot;z&quot;</code></pre>
 </div>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

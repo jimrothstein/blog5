@@ -1478,6 +1478,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<h4 id="some-of-the-books-i-find-useful">Some of the books I find useful:</h4>
 <!--
 file <- "001_R_stats_tech_reading.md"
 !pandoc % -t latex -V linkcolor:blue -V fontsize=10pt -V geometry:margin=0.3in -o ~/Downloads/print_and_delete/reading.pdf 
@@ -1506,8 +1507,10 @@ s/https.*/[&]()/g
 <ul>
 <li>Peng, <a href="https://bookdown.org/rdpeng/rprogdatascience/" class="uri">https://bookdown.org/rdpeng/rprogdatascience/</a></li>
 <li>Hadley, <a href="https://r4ds.had.co.nz/index.html" class="uri">https://r4ds.had.co.nz/index.html</a></li>
+<li><a href="https://stat545.com/index.html">Jennybc (book)</a> <a href="https://rstats.wtf/">wtf</a> <a href="https://happygitwithr.com/">git</a></li>
 <li>Gillespie (2016) <a href="https://bookdown.org/csgillespie/efficientR/" class="uri">https://bookdown.org/csgillespie/efficientR/</a></li>
 <li>Matloff: Appendix A</li>
+<li>Matloff: Art of R Programming</li>
 </ul>
 <h3 id="r---more-advanced">R - more advanced</h3>
 <ul>
@@ -1515,6 +1518,20 @@ s/https.*/[&]()/g
 <li>design.tidyverse.org</li>
 </ul>
 <h3 id="basic-statistics">Basic Statistics</h3>
+<h4 id="more-intuitive">More Intuitive:</h4>
+<ul>
+<li>[Rossman, know all the basics? confident?] ( <a href="https://askgoodquestions.blog/" class="uri">https://askgoodquestions.blog/</a> )</li>
+<li>Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Explanatory Model Analysis
+<ul>
+<li><a href="https://ema.drwhy.ai/" class="uri">https://ema.drwhy.ai/</a></li>
+</ul></li>
+<li>ML Berkeley: <a href="https://ml.berkeley.edu/blog/posts/crash-course/part-1/" class="uri">https://ml.berkeley.edu/blog/posts/crash-course/part-1/</a></li>
+<li>Goodfellow et al: <a href="https://www.deeplearningbook.org/" class="uri">https://www.deeplearningbook.org/</a> ideas</li>
+<li>Guo: Creative site and book: <a href="https://seeing-theory.brown.edu/#firstPage" class="uri">https://seeing-theory.brown.edu/#firstPage</a></li>
+<li>navarro (learn statistics with r) review lm() and geometric r^2</li>
+<li>navarro 2019 (learn statistics with r) study output of lm()</li>
+</ul>
+<h4 id="solid-basic-intros">Solid, basic intros</h4>
 <ul>
 <li>PSU Course begin with 414 | | no R
 <ul>
@@ -1523,63 +1540,29 @@ s/https.*/[&]()/g
 <li><a href="https://online.stat.psu.edu/stat415/" class="uri">https://online.stat.psu.edu/stat415/</a></li>
 </ul></li>
 <li>AMS Basic, good intro CLT (but not t)</li>
-<li>Dekking, et al Modern Introduction to Probability &amp; Statistics (2005), no R.</li>
+<li>Dekking, et al Modern Introduction to Probability &amp; Statistics (2005), no R.
+<ul>
+<li><a href="https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf" class="uri">https://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf</a></li>
+</ul></li>
 <li>Faraday, PRAR: Practical Regression, Anova, linear algebra (mature approach)</li>
 <li>Frey, Bruce “Statistical Hacks”</li>
+<li>[Dalpiaz, David, Univ of IL] ( <a href="https://daviddalpiaz.github.io/appliedstats/" class="uri">https://daviddalpiaz.github.io/appliedstats/</a> )</li>
 <li>Matloff (Prob book)
 <ul>
 <li><a href="http://heather.cs.ucdavis.edu/~matloff/132/PLN/probstatbook/ProbStatBook.pdf" class="uri">http://heather.cs.ucdavis.edu/~matloff/132/PLN/probstatbook/ProbStatBook.pdf</a></li>
 <li>(via pdflatex) <a href="https://github.com/matloff/probstatbook" class="uri">https://github.com/matloff/probstatbook</a> Good, maybe too good and skips a few basics?</li>
 </ul></li>
-<li>Siegrist CLT, stats, linear alg | aka randomservices.org | ** best book for introducing Math</li>
-</ul>
-<h3 id="more-advanced-regessionmodeling-books">More advanced regession/modeling books</h3>
+<li>Siegrist CLT, stats, linear alg | aka randomservices.org | ** best book for introducing Math
 <ul>
-<li>Shalizi: excellent:
-<ul>
-<li><a href="http://www.stat.cmu.edu/~cshalizi/TALR/" class="uri">http://www.stat.cmu.edu/~cshalizi/TALR/</a></li>
-<li>Shalizi <a href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf" class="uri">http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf</a></li>
-<li><a href="http://www.stat.cmu.edu/~cshalizi/mreg/15/" class="uri">http://www.stat.cmu.edu/~cshalizi/mreg/15/</a></li>
+<li>Nahim, Dueling Idiots, harder but real world stats/prob problems (pins falling on surfaces)</li>
 </ul></li>
 </ul>
-<h3 id="linear-algebra">Linear Algebra</h3>
-<h4 id="level-1-start">Level 1 (start)</h4>
+<h3 id="other-book-statsr-books">Other book stats/R books:</h3>
 <ul>
-<li>Beezer Linear Algebra
+<li>hannay (=rbassett) read, but avoid code + its pkgs ch 11, 12 |
 <ul>
-<li>0 stats, but good review for me, right level</li>
+<li><pre><code>https://faculty.nps.edu/rbassett/_book/</code></pre></li>
 </ul></li>
-<li>Bendixcarstensen.com, with R &amp; matrix models (try not use api pkg)
-<ul>
-<li><a href="http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf" class="uri">http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf</a></li>
-</ul></li>
-</ul>
-<h4 id="level-2">Level 2</h4>
-<ul>
-<li>Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.</li>
-<li>Thomas, Math for ML … good lin alg, but quickly gets advanced. <a href="https://gwthomas.github.io/docs/math4ml.pdf" class="uri">https://gwthomas.github.io/docs/math4ml.pdf</a></li>
-<li>Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level</li>
-<li>Strang, Linear Algebra (classic)</li>
-<li>Taubes, linear alg, statistics, <a href="http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf" class="uri">http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf</a></li>
-</ul>
-<h4 id="also">Also</h4>
-<ul>
-<li>Artin, Michael “Algebra” - readable ?</li>
-<li>Davidson (Econometric) - Ch 1, 2</li>
-<li>Friendly - R Pkg linear algebra</li>
-<li>Kazan | normal equations</li>
-<li>Rafael genomics - Chapter 4 matrix</li>
-</ul>
-<h4 id="more-intuitive-less-coding-r-math">More intuitive, less coding (R) math</h4>
-<ul>
-<li>Przemyslaw Biecek and Tomasz Burzykowski | different ideas | Explanatory Model Analysis
-<ul>
-<li><a href="https://ema.drwhy.ai/" class="uri">https://ema.drwhy.ai/</a></li>
-</ul></li>
-</ul>
-<h4 id="regression-ml-modeling-books">REGRESSION, ML, MODELING BOOKS</h4>
-<ul>
-<li>Boehmke Hands on ML | <a href="https://bradleyboehmke.github.io/HOML/" class="uri">https://bradleyboehmke.github.io/HOML/</a></li>
 <li>Compeau:
 <ul>
 <li>great ideas book! <a href="http://compeau.cbd.cmu.edu/" class="uri">http://compeau.cbd.cmu.edu/</a> |<br />
@@ -1587,49 +1570,69 @@ s/https.*/[&]()/g
 <li><a href="http://compeau.cbd.cmu.edu/programming-for-lovers/" class="uri">http://compeau.cbd.cmu.edu/programming-for-lovers/</a> cmu - ch 8, 9 esp collinear.<br />
 </li>
 </ul></li>
-<li>Efron, Hastie “Computer Age Statistical Inference” (advanced, but chapter intros put techniques into perspective), no R.</li>
-<li>hannay (=rbassett) read, but avoid code + its pkgs ch 11, 12 |
-<ul>
-<li><pre><code>https://faculty.nps.edu/rbassett/_book/</code></pre></li>
-</ul></li>
-<li>Harrell, glossary: <a href="http://hbiostat.org/doc/glossary.pdf" class="uri">http://hbiostat.org/doc/glossary.pdf</a></li>
+<li>Berkeley, excellent glossary: <a href="https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm" class="uri">https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm</a></li>
 <li>ismay modern dive (2020)</li>
-<li>Jennybc (book) * ch18-20</li>
-<li>kaplan (2017) ch 6.5</li>
-<li>kuhn (2019) fes * no r, not an intro. book.</li>
+<li>kaplan (2017) ch 6.5 <a href="https://dtkaplan.github.io/SM2-bookdown/" class="uri">https://dtkaplan.github.io/SM2-bookdown/</a></li>
 <li>kurz</li>
 <li>lane se(b_hat)</li>
 <li>MATLOFF (1st book) * ch3 - lot of useful prproperties of x,y * ch 7 - affine transformations</li>
 <li>matloff(2020) book</li>
 <li>mcelreath (videos)</li>
-<li>navarro (learn statistics with r) review lm() and geometric r^2</li>
-<li>navarro 2019 (learn statistics with r) study output of lm()</li>
 <li>PENG
 <ul>
 <li><pre><code>art of ... (2017) ch 6.5</code></pre></li>
 <li><pre><code>r4ds             (2019) ch 9.5</code></pre></li>
 </ul></li>
+<li><pre><code>mosaic ch 5.6, ch 24</code></pre></li>
+</ul>
+<h3 id="more-advanced-regessionmodeling-books">More advanced regession/modeling books</h3>
+<ul>
+<li>Shalizi: excellent: * <a href="http://www.stat.cmu.edu/~cshalizi/TALR/" class="uri">http://www.stat.cmu.edu/~cshalizi/TALR/</a> * Shalizi <a href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf" class="uri">http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf</a> * <a href="http://www.stat.cmu.edu/~cshalizi/mreg/15/" class="uri">http://www.stat.cmu.edu/~cshalizi/mreg/15/</a></li>
+<li>Boehmke Hands on ML | <a href="https://bradleyboehmke.github.io/HOML/" class="uri">https://bradleyboehmke.github.io/HOML/</a></li>
+<li>Davidson (Econometric) - Ch 1, 2</li>
+<li>Thomas, Math for ML … good lin alg, but quickly gets advanced. <a href="https://gwthomas.github.io/docs/math4ml.pdf" class="uri">https://gwthomas.github.io/docs/math4ml.pdf</a></li>
+<li>Deisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level</li>
+<li>Efron, Hastie “Computer Age Statistical Inference” (advanced, but chapter intros put techniques into perspective), no R.</li>
+<li>Kuhn (2019): <a href="https://bookdown.org/max/FES/" class="uri">https://bookdown.org/max/FES/</a></li>
 <li>RAFAEL dsbook - ch 17.4, ch 18.3.4</li>
-<li>Roback/Legler Beyond Multiple Linear Regression: (2021)_ <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a> (Replaces BYSH)</li>
+<li>Roback/Legler Beyond Multiple Linear Regression: (2021)_ <a href="https://bookdown.org/roback/bookdown-BeyondMLR/" class="uri">https://bookdown.org/roback/bookdown-BeyondMLR/</a> (Replaces BYSH) introduces liklihood; ch6 - logistic worked problem</li>
 <li>Siegrist (aka random services.org)</li>
 <li><ul>
 <li>random| (3)expected value 1..11 and |(5) random samples 1-8 (t-dist)</li>
 </ul></li>
-<li><pre><code>mosaic ch 5.6, ch 24</code></pre></li>
+<li>Taubes, linear alg, statistics, <a href="http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf" class="uri">http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf</a> Biology? math? probability? Think this is really an ideas book; not as easy as may appear.</li>
+</ul>
+<h3 id="linear-algebra-as-mathematics">Linear Algebra (as mathematics)</h3>
+<ul>
+<li>Beezer Linear Algebra (easier?)</li>
+<li>Herve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.</li>
+<li>Strang, Linear Algebra (classic)</li>
+<li>Artin, Michael “Algebra” - readable ?</li>
+<li>Friendly - R Pkg linear algebra</li>
+<li>Kazan | normal equations</li>
+</ul>
+<h4 id="intro-to-linear-alg-models">Intro to Linear Alg &amp; Models,</h4>
+<ul>
+<li>Kuiper, Shonda: simple, clear: video: <a href="https://www.youtube.com/watch?v=jQkK0XMrAdM" class="uri">https://www.youtube.com/watch?v=jQkK0XMrAdM</a></li>
+<li>Race, Shaina gentle intro to lin alg:, <a href="https://shainarace.github.io/LinearAlgebra/index.html" class="uri">https://shainarace.github.io/LinearAlgebra/index.html</a></li>
+<li>Bendixcarstensen.com, with R &amp; matrix models (try not use api pkg) <a href="http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf" class="uri">http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf</a></li>
+<li>Rafael genomics - Chapter 4 matrix</li>
 </ul>
 <h3 id="good-technical-reading">Good Technical Reading</h3>
 <ul>
-<li>Math 4 Machine Learning <a href="https://mml-book.github.io/book/mml-book.pdf" class="uri">https://mml-book.github.io/book/mml-book.pdf</a></li>
 <li>Latex: Latex in 24 hours (iPad)</li>
 <li>Linux: Archiwiki, Debian, FreeBSD</li>
 <li>Gross, Ash et al “Elliptical Tales” - very readable, but must think! (515.983 | ASH | 2012)</li>
 </ul>
 <h3 id="videos">Videos</h3>
 <ul>
-<li>[maththebeautiful - Paul?]<a href="https://www.youtube.com/c/MathTheBeautiful/playlists" class="uri">https://www.youtube.com/c/MathTheBeautiful/playlists</a></li>
+<li><a href="https://www.youtube.com/c/MathTheBeautiful/playlists">maththebeautiful - Paul?</a></li>
 <li><a href="https://www.youtube.com/channel/UCdwo4k1RQHTcq_-WS7Cazqg">Bright Side of Math</a></li>
 <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
 <li>Zedstatistics</li>
+<li>[Chris Mack] (<a href="http://www.lithoguru.com/scientist/statistics/course.html" class="uri">http://www.lithoguru.com/scientist/statistics/course.html</a>) - practical R, models</li>
+<li><a href="https://statisticsglobe.com/r-programming-language">Statistics Globe</a></li>
+<li><a href="https://statquest.org/video-index/">Statquest - Josh Starmer</a></li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

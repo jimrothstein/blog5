@@ -66,12 +66,12 @@ knitr::opts_chunk$set(echo = TRUE,
   rmarkdown::render("~/code/blog5/_posts/2021-07-29-posttwo/posttwo.Rmd")
 
   # used copy & paste of files
-  rmarkdown::render("~/code/blog5/_posts/2021-07-29-postthree/postthree.Rmd")
   rmarkdown::render("~/code/blog5/_posts/2021-08-14-install-notes/postthree.Rmd")
-  rmarkdown::render("~/code/blog5/_posts/2021-08-16-random-R-notes/postthree.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/random-R-notes/useful_base_R.Rmd")
 
-  rmarkdown::render("~/code/blog5/_posts/2021-08-17-reading/posttwo.Rmd")
   rmarkdown::render("~/code/blog5/_posts/reading_list/posttwo.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/people_list/people_I_follow.Rmd")
+
   rmarkdown::render("~/code/blog5/_posts/environ/0000_ls_objects.Rmd")
   
 
