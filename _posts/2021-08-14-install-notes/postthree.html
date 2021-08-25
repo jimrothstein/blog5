@@ -1584,10 +1584,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <pre><code>      ## [1] &quot;_R_CHECK_COMPILATION_FLAGS_KNOWN_&quot;
       ## [2] &quot;API_KEY&quot;                          
-      ## [3] &quot;CLICOLOR_FORCE&quot;                   
-      ## [4] &quot;DBUS_SESSION_BUS_ADDRESS&quot;         
-      ## [5] &quot;DEFAULTS_PATH&quot;                    
-      ## [6] &quot;DESKTOP_SESSION&quot;</code></pre>
+      ## [3] &quot;APPDIR&quot;                           
+      ## [4] &quot;APPIMAGE&quot;                         
+      ## [5] &quot;COLORTERM&quot;                        
+      ## [6] &quot;COLUMNS&quot;</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>s</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"^R"</span>, x <span class='op'>=</span> <span class='va'>names</span><span class='op'>)</span><span class='op'>]</span><span class='op'>)</span>
 </code></pre>
@@ -1595,15 +1595,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre><code>      ## R_ARCH               
       ## R_BROWSER            xdg-open
       ## R_BZIPCMD            /bin/bzip2
+      ## R_DEFAULT_PACKAGES   
       ## R_DOC_DIR            /usr/share/R/doc
-      ## R_GZIPCMD            /bin/gzip -n
-      ## R_HIST_SIZE          1000</code></pre>
+      ## R_GZIPCMD            /bin/gzip -n</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>s</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"^R_LIBS"</span>, x <span class='op'>=</span> <span class='va'>names</span><span class='op'>)</span><span class='op'>]</span>
 </code></pre>
 </div>
 <pre><code>      ## R_LIBS               
-      ## R_LIBS_SITE          library:/usr/lib/R/library
+      ## R_LIBS_SITE          /usr/lib/R/library
       ## R_LIBS_USER          ~/R/x86_64-pc-linux-gnu-library/4.1</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
