@@ -18,6 +18,20 @@ Before do anything, what frame # ?
 cat("nframe = ", sys.nframe(), "\n")
 ```
 
+
+```{r local}
+print(sys.nframe())
+print(sys.parent(n=1))
+
+local( {
+      x  <- 1
+      print(sys.nframe())
+      print(sys.parent(n=1))
+      local({print(sys.nframe())})
+}
+      )
+```
+
 How many levels down ?  
 
   -  0=GlobalEnv  

@@ -51,23 +51,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/2021-07-29-postthree/",
-    "title": "post_THREE",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Jim",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2021-07-29",
-    "categories": [],
-    "contents": "\npost_THREE\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-07-29T15:25:20-07:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/people_list/",
     "title": "Useful reading",
     "description": "reading",
@@ -99,6 +82,23 @@
     "contents": "\npost_ONE\n\n\n\n",
     "preview": {},
     "last_modified": "2021-07-29T15:08:20-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/publish_project/",
+    "title": "latex_trees",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Jim",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-07-29",
+    "categories": [],
+    "contents": "\nLatex and Trees\nExample of Latex and Trees\n{r users, child=c(\"~/code/publish_project/MATH/0100_latex_trees.Rmd\")\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-25T14:14:25-07:00",
     "input_file": {}
   },
   {

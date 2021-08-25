@@ -73,6 +73,7 @@ knitr::opts_chunk$set(echo = TRUE,
   rmarkdown::render("~/code/blog5/_posts/people_list/people_I_follow.Rmd")
 
   rmarkdown::render("~/code/blog5/_posts/environ/0000_ls_objects.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/publish_project/latex_trees.Rmd")
   
 
 
