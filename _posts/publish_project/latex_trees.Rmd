@@ -21,7 +21,7 @@ file <- "posts/publish_project/latex_trees.Rmd"
 ```
 
 #### Example of Latex and Trees
-```{r users, child=c("~/code/publish_project/MATH/0100_latex_trees.Rmd")
+```{r users, child=c("~/code/publish_project/MATH/0100_latex_trees.Rmd")}
 ```
 
 
