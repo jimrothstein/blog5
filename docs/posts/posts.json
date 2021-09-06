@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/welcome/",
+    "title": "Welcome to blog5",
+    "description": "Welcome to our new blog, blog5. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Jim",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-09-05",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-09-05T21:24:49-07:00",
+    "input_file": "welcome.knit.md"
+  },
+  {
     "path": "posts/people_list/",
     "title": "People I follow",
     "description": "people",
@@ -99,23 +116,6 @@
     "contents": "\nSome of the books I find useful:\n\nAs of \nR - always learn something new:\nPeng, https://bookdown.org/rdpeng/rprogdatascience/\nHadley, https://r4ds.had.co.nz/index.html\nJennybc (book) wtf git\nGillespie (2016) https://bookdown.org/csgillespie/efficientR/\nMatloff: Appendix A\nMatloff: Art of R Programming\nR - more advanced\nofficial CRAN: https://cran.r-project.org/manuals.html\ndesign.tidyverse.org\nBasic Statistics\nMore Intuitive:\n[Rossman, know all the basics? confident?] ( https://askgoodquestions.blog/ )\nPrzemyslaw Biecek and Tomasz Burzykowski | different ideas | Explanatory Model Analysis\nhttps://ema.drwhy.ai/\n\nML Berkeley: https://ml.berkeley.edu/blog/posts/crash-course/part-1/\nGoodfellow et al: https://www.deeplearningbook.org/ ideas\nGuo: Creative site and book: https://seeing-theory.brown.edu/#firstPage\nnavarro (learn statistics with r) review lm() and geometric r^2\nnavarro 2019 (learn statistics with r) study output of lm()\nSolid, basic intros\nPSU Course begin with 414 | | no R\nhttps://online.stat.psu.edu/stat414/\nhttps://online.stat.psu.edu/stat462/\nhttps://online.stat.psu.edu/stat415/\n\nAMS Basic, good intro CLT (but not t)\nDekking, et al Modern Introduction to Probability & Statistics (2005), no R.\nhttps://cis.temple.edu/~latecki/Courses/CIS2033-Spring13/Modern_intro_probability_statistics_Dekking05.pdf\n\nFaraday, PRAR: Practical Regression, Anova, linear algebra (mature approach)\nFrey, Bruce “Statistical Hacks”\n[Dalpiaz, David, Univ of IL] ( https://daviddalpiaz.github.io/appliedstats/ )\nMatloff (Prob book)\nhttp://heather.cs.ucdavis.edu/~matloff/132/PLN/probstatbook/ProbStatBook.pdf\n(via pdflatex) https://github.com/matloff/probstatbook Good, maybe too good and skips a few basics?\n\nSiegrist CLT, stats, linear alg | aka randomservices.org | ** best book for introducing Math\nNahim, Dueling Idiots, harder but real world stats/prob problems (pins falling on surfaces)\n\nOther book stats/R books:\nhannay (=rbassett) read, but avoid code + its pkgs ch 11, 12 |\nhttps://faculty.nps.edu/rbassett/_book/\n\nCompeau:\ngreat ideas book! http://compeau.cbd.cmu.edu/ |\nhttp://compeau.cbd.cmu.edu/programming-for-lovers/ cmu - ch 8, 9 esp collinear.\n\nBerkeley, excellent glossary: https://www.stat.berkeley.edu/~stark/SticiGui/Text/gloss.htm\nismay modern dive (2020)\nkaplan (2017) ch 6.5 https://dtkaplan.github.io/SM2-bookdown/\nkurz\nlane se(b_hat)\nMATLOFF (1st book) * ch3 - lot of useful prproperties of x,y * ch 7 - affine transformations\nmatloff(2020) book\nmcelreath (videos)\nPENG\nart of ... (2017) ch 6.5\nr4ds             (2019) ch 9.5\n\nmosaic ch 5.6, ch 24\nMore advanced regession/modeling books\nShalizi: excellent: * http://www.stat.cmu.edu/~cshalizi/TALR/ * Shalizi http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf * http://www.stat.cmu.edu/~cshalizi/mreg/15/\nBoehmke Hands on ML | https://bradleyboehmke.github.io/HOML/\nDavidson (Econometric) - Ch 1, 2\nThomas, Math for ML … good lin alg, but quickly gets advanced. https://gwthomas.github.io/docs/math4ml.pdf\nDeisenroth, Faiesel et al | Math4ML *book | linear alg book, regression, 2nd level\nEfron, Hastie “Computer Age Statistical Inference” (advanced, but chapter intros put techniques into perspective), no R.\nKuhn (2019): https://bookdown.org/max/FES/\nRAFAEL dsbook - ch 17.4, ch 18.3.4\nRoback/Legler Beyond Multiple Linear Regression: (2021)_ https://bookdown.org/roback/bookdown-BeyondMLR/ (Replaces BYSH) introduces liklihood; ch6 - logistic worked problem\nSiegrist (aka random services.org)\nrandom| (3)expected value 1..11 and |(5) random samples 1-8 (t-dist)\n\nTaubes, linear alg, statistics, http://people.math.harvard.edu/~knill/teaching/math19b_2011/handouts/chapters1-19.pdf Biology? math? probability? Think this is really an ideas book; not as easy as may appear.\nLinear Algebra (as mathematics)\nBeezer Linear Algebra (easier?)\nHerve Adbi | lin alg| no R, no stat, starts simple but gets to decomposition.\nStrang, Linear Algebra (classic)\nArtin, Michael “Algebra” - readable ?\nFriendly - R Pkg linear algebra\nKazan | normal equations\nIntro to Linear Alg & Models,\nKuiper, Shonda: simple, clear: video: https://www.youtube.com/watch?v=jQkK0XMrAdM\nRace, Shaina gentle intro to lin alg:, https://shainarace.github.io/LinearAlgebra/index.html\nBendixcarstensen.com, with R & matrix models (try not use api pkg) http://www.bendixcarstensen.com/APC/linalg-notes-BxC.pdf\nRafael genomics - Chapter 4 matrix\nGood Technical Reading\nLatex: Latex in 24 hours (iPad)\nLinux: Archiwiki, Debian, FreeBSD\nGross, Ash et al “Elliptical Tales” - very readable, but must think! (515.983 | ASH | 2012)\nVideos\nmaththebeautiful - Paul?\nBright Side of Math\n3Blue1Brown\nZedstatistics\n[Chris Mack] (http://www.lithoguru.com/scientist/statistics/course.html) - practical R, models\nStatistics Globe\nStatquest - Josh Starmer\n\n\n\n\n",
     "preview": {},
     "last_modified": "2021-08-25T14:23:29-07:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/welcome/",
-    "title": "Welcome to blog5",
-    "description": "Welcome to our new blog, blog5. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Jim",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2021-07-29",
-    "categories": [],
-    "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-09-05T20:50:56-07:00",
     "input_file": {}
   }
 ]
