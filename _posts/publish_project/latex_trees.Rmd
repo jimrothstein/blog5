@@ -8,12 +8,16 @@ author:
 date: 07-29-2021
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: false  
+    mathjax: default  
+    extra_dependencies: ["amssymb", "bbm", "threeparttable", "forest"]
 ---
-#### Latex and Trees
-
+#### Latex and "Trees"
+file <- _posts/publish_project/latex_trees.Rmd
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+file <- "posts/publish_project/latex_trees.Rmd"
 ```
 
 #### Example of Latex and Trees

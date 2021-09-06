@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["postthree_files/anchor-4.2.2/anchor.min.js","postthree_files/bowser-1.9.3/bowser.min.js","postthree_files/distill-2.2.21/template.v2.js","postthree_files/header-attrs-2.10/header-attrs.js","postthree_files/jquery-1.11.3/jquery.min.js","postthree_files/popper-2.6.0/popper.min.js","postthree_files/tippy-6.2.7/tippy-bundle.umd.min.js","postthree_files/tippy-6.2.7/tippy-light-border.css","postthree_files/tippy-6.2.7/tippy.css","postthree_files/tippy-6.2.7/tippy.umd.min.js","postthree_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"NULL"}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1434,16 +1434,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="postthree_files/header-attrs-2.10/header-attrs.js"></script>
-  <script src="postthree_files/jquery-1.11.3/jquery.min.js"></script>
-  <script src="postthree_files/popper-2.6.0/popper.min.js"></script>
-  <link href="postthree_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="postthree_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="postthree_files/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="postthree_files/anchor-4.2.2/anchor.min.js"></script>
-  <script src="postthree_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="postthree_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="postthree_files/distill-2.2.21/template.v2.js"></script>
+  <script src="R_setup_environment_files/header-attrs-2.10/header-attrs.js"></script>
+  <script src="R_setup_environment_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="R_setup_environment_files/popper-2.6.0/popper.min.js"></script>
+  <link href="R_setup_environment_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="R_setup_environment_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="R_setup_environment_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="R_setup_environment_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="R_setup_environment_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="R_setup_environment_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="R_setup_environment_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -1479,11 +1479,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <p>R Update Notes</p>
-<h2 id="section"></h2>
-<p>Each time I update R, I seem to run into trouble with one or more directories that R uses. The reasons probably relate to switching from RStudio to another IDE (neovim) or compiling from source one time and using binaries the next.</p>
-<p>To sort it out, I found this the Ubuntu/Debian instructions helpful: <a href="https://ftp.osuosl.org/pub/cran/bin/linux/debian" class="uri">https://ftp.osuosl.org/pub/cran/bin/linux/debian</a></p>
-<p>But first, I had to remove all the old R installations. Then I followed directions for Debian binary installation. In particular, the section <code>https://ftp.osuosl.org/pub/cran/bin/linux/debian</code> explains where the environment variables are set.</p>
-<p>So here I collect useful R environment variables I found to be important. To ease navigation, I also set shell environment variables (I use zsh ) to match R. Of course, your experience will differ, but getting a good grasp on the R environment variables may avoid some future pain.</p>
+<h4 id="problem">Problem</h4>
+<p>Normally, I use neovim + plugin nvim-R as my IDE. Recently I tried to install RStudio but ran into errors.</p>
+<h4 id="directories">Directories</h4>
+<p>Seems each time I update R, I run into trouble with one or more directories that R uses. The reasons probably relate to the past of switching from RStudio to neovim or compiling from source one time and using binaries the next.</p>
+<p>Over time, my R setup has collected diretories with various permuations of “lib”, “library”, “local.” Rather than sort it all out, I decided to remove R and begin again.</p>
+<p>I found this the Ubuntu/Debian instructions helpful: <a href="https://ftp.osuosl.org/pub/cran/bin/linux/debian" class="uri">https://ftp.osuosl.org/pub/cran/bin/linux/debian</a>, which explains some of R environmental variables.</p>
+<h4 id="organization">Organization</h4>
+<p>So here I collect useful R environment variables I found to be important. To ease navigation, I also set shell environment variables (I use zsh ) to match R.</p>
+<p>Of course, your experience will differ, but getting a good grasp on the R environment variables may avoid some future pain.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>R_env</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"R_HOME"</span>, 
@@ -1509,8 +1513,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span class='va'>dt</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://Rdatatable.gitlab.io/data.table/reference/data.table.html'>data.table</a></span><span class='op'>(</span>R_env <span class='op'>=</span> <span class='va'>R_env</span>,
                   path <span class='op'>=</span> <span class='va'>paths</span>,
                   zsh_env <span class='op'>=</span> <span class='va'>zsh_env</span><span class='op'>)</span>
-
-
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r">
 <span class='va'>dt</span> <span class='op'>%&gt;%</span> <span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/kable.html'>kable</a></span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
@@ -1551,16 +1559,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tbody>
 </table>
 </div>
-<h3 id="special-notes">Special notes</h3>
+<h4 id="special-notes">Special notes</h4>
 <ul>
-<li>Ending slash indicates a directory: /usr/lib/R/library/</li>
-<li>A file has no ending slash: ~/.Renviron</li>
-<li>The file Renviron in directory /etc/R/ sets many environment variables, including $R_LIBS_SITE, which designates one more directories for packages.</li>
-<li>I modified this to include only one directory: /usr/lib/R/library/</li>
-<li>Because there are a couple of ways to install R packages (from Debian, from source, from inside R, …) I may decide to modify this later to expand possibily directories for R packages.</li>
+<li>Ending slash indicates a directory: (/usr/lib/R/library/)</li>
+<li>No ending slash indicates a file: ( ~/.Renviron )</li>
+<li>The file Renviron in directory /etc/R/ sets many environment variables, including $R_LIBS_SITE. $R_LIBS_SITE is important because it designates a base one more directories for R packages.</li>
+<li>I pruned $R_LIBS_SITE to include only one directory: /usr/lib/R/library/</li>
+<li>Because there are a couple of ways to install R packages (from Debian, from source, from inside R, …) I may decide later to modify this.</li>
 <li>(future) There are other environment variables that may be useful, for example R_ENVIRON, R_ENVIRON_USER but I did not use these.</li>
 </ul>
-<h3 id="here-is-one-way-to-confirm-which-directories-r-is-using-for-packages.">Here is one way to confirm which directories R is using for packages.</h3>
+<h4 id="checking">Checking</h4>
+<p>Here is one way to confirm which directories R is using for packages.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/libPaths.html'>.libPaths</a></span><span class='op'>(</span><span class='op'>)</span>
@@ -1569,7 +1578,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre><code>      ## [1] &quot;/home/jim/R/x86_64-pc-linux-gnu-library/4.1&quot;
       ## [2] &quot;/usr/lib/R/library&quot;</code></pre>
 </div>
-<h3 id="another-way-is-through-sys.getenv-to-find-r-env-variables">Another way is through Sys.getenv() to find R env variables</h3>
+<h4 id="another-way-is-through-sys.getenv-to-find-r-env-variables">Another way is through Sys.getenv() to find R env variables</h4>
 <ul>
 <li>R_HOME</li>
 <li>R_LIBS_SITE</li>
@@ -1612,15 +1621,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 </div>
-<h3 id="troubleshooting">Troubleshooting</h3>
+<h4 id="troubleshooting">Troubleshooting</h4>
 <ul>
 <li>R –vanilla</li>
-</ul>
-<h3 id="running-rstudio-requires-r-be-compiled-with-.">Running RStudio requires R be compiled with ….</h3>
-<ul>
-<li>Orignal motivation for this particular upgrade was to install RStudio (I normally use neovim + nvim-R plug in) and have not installed RStudio.</li>
-<li>Unfortunately, I did not do this; RStudio’s error msg not too friendly.</li>
-<li>I decided to use R binaries, and so followed this webpage <a href="https://ftp.osuosl.org/pub/cran/" class="uri">https://ftp.osuosl.org/pub/cran/</a> and this …. R –vanilla worked, but not R. Problems with where installed R puts things, local, lib etc.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
