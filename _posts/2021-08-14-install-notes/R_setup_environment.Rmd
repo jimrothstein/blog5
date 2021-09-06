@@ -1,7 +1,7 @@
 ---
 title: "post_upgrade_notes"
 description: |
-  A short description of the post.
+  Environment variables and R install. 
 author:
   - name: Jim
 date: 08-14-2021
