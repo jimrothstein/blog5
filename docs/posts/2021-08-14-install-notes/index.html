@@ -88,31 +88,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
 <title>blog5: post_upgrade_notes</title>
 
-<meta property="description" itemprop="description" content="A short description of the post."/>
+<meta property="description" itemprop="description" content="Environment variables and R install."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-08-14"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-08-14"/>
+<meta property="article:published" itemprop="datePublished" content="2021-08-20"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-08-20"/>
 <meta name="article:author" content="Jim"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="blog5: post_upgrade_notes"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="A short description of the post."/>
+<meta property="og:description" content="Environment variables and R install."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="blog5"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="blog5: post_upgrade_notes"/>
-<meta property="twitter:description" content="A short description of the post."/>
+<meta property="twitter:description" content="Environment variables and R install."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["post_upgrade_notes"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jim"]}]}]},{"type":"character","attributes":{},"value":["08-14-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["post_upgrade_notes"]},{"type":"character","attributes":{},"value":["Environment variables and R install."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jim"]}]}]},{"type":"character","attributes":{},"value":["last updated  08 September 2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2062,7 +2062,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"post_upgrade_notes","description":"A short description of the post.","authors":[{"author":"Jim","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-08-14T00:00:00.000-07:00","citationText":"Jim, 2021"}
+{"title":"post_upgrade_notes","description":"Environment variables and R install.","authors":[{"author":"Jim","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-08-20T00:00:00.000-07:00","citationText":"Jim, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2088,13 +2088,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1>post_upgrade_notes</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A short description of the post.</p></p>
+<p><p>Environment variables and R install.</p></p>
 </div>
 
 <div class="d-byline">
   Jim  
   
-<br/>08-14-2021
+<br/>last updated 08 September 2021
 </div>
 
 <div class="d-article">
@@ -2206,40 +2206,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>s</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/Sys.getenv.html'>Sys.getenv</a></span><span class='op'>(</span><span class='op'>)</span>
-<span class='va'>names</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>s</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>names</span><span class='op'>)</span>
-</code></pre>
-</div>
-<pre><code>      ## [1] &quot;_R_CHECK_COMPILATION_FLAGS_KNOWN_&quot;
-      ## [2] &quot;API_KEY&quot;                          
-      ## [3] &quot;APPDIR&quot;                           
-      ## [4] &quot;APPIMAGE&quot;                         
-      ## [5] &quot;COLORTERM&quot;                        
-      ## [6] &quot;COLUMNS&quot;</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>s</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"^R"</span>, x <span class='op'>=</span> <span class='va'>names</span><span class='op'>)</span><span class='op'>]</span><span class='op'>)</span>
-</code></pre>
-</div>
-<pre><code>      ## R_ARCH               
-      ## R_BROWSER            xdg-open
-      ## R_BZIPCMD            /bin/bzip2
-      ## R_DEFAULT_PACKAGES   
-      ## R_DOC_DIR            /usr/share/R/doc
-      ## R_GZIPCMD            /bin/gzip -n</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>s</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"^R_LIBS"</span>, x <span class='op'>=</span> <span class='va'>names</span><span class='op'>)</span><span class='op'>]</span>
+<pre class="sourceCode r"><code class="sourceCode r">
+<span class='va'>s</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"^R_LIBS"</span>, x <span class='op'>=</span> <span class='va'>names</span><span class='op'>)</span><span class='op'>]</span>
 </code></pre>
 </div>
 <pre><code>      ## R_LIBS               
       ## R_LIBS_SITE          /usr/lib/R/library
       ## R_LIBS_USER          ~/R/x86_64-pc-linux-gnu-library/4.1</code></pre>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>F</span><span class='op'>)</span> <span class='fu'><a href='https://rdrr.io/r/utils/help.html'>help</a></span><span class='op'>(</span><span class='va'>.libPaths</span><span class='op'>)</span>
-</code></pre>
-</div>
 </div>
 <h4 id="troubleshooting">Troubleshooting</h4>
 <ul>
@@ -2251,8 +2224,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </code></pre>
 </div>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

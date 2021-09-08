@@ -4,7 +4,10 @@ description: |
   Environment variables and R install. 
 author:
   - name: Jim
-date: 08-14-2021
+
+date: "`r paste('last updated', 
+    format(lubridate::now(), ' %d %B %Y'))`"
+#date: 08-14-2021
 output:
   distill::distill_article:
     self_contained: false
