@@ -1,8 +1,7 @@
 ---
 title: "Welcome to blog5"
 description: |
-  Welcome to our new blog, blog5. We hope you enjoy 
-  reading what we have to say!
+  Blog about things I found interesting in R.
 author:
   - name: Jim 
     url: https://example.com/norajones

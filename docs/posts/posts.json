@@ -1,8 +1,25 @@
 [
   {
+    "path": "posts/watch/",
+    "title": "Closure and StopWatch",
+    "description": "closure",
+    "author": [
+      {
+        "name": "Jim",
+        "url": {}
+      }
+    ],
+    "date": "2021-10-14",
+    "categories": [],
+    "contents": "\nWhy Closure, StopWatch example:\nREF: Gillespie, Lovelace pg63\nOne use: closure (function + env) is way to CACHE variables.\nWhy Closure, StopWatch example:\nREF: Gillespie, Lovelace pg63\nOne use: closure (function + env) is way to CACHE variables.\n\nTime difference of 0.00145 secs\nTime difference of 0.0033 secs\nTime difference of 0.0307 secs\n\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-10-14T07:08:04-07:00",
+    "input_file": "watch.knit.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to blog5",
-    "description": "Welcome to our new blog, blog5. We hope you enjoy \nreading what we have to say!",
+    "description": "Blog about things I found interesting in R.",
     "author": [
       {
         "name": "Jim",
@@ -13,8 +30,8 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-09-05T21:24:49-07:00",
-    "input_file": {}
+    "last_modified": "2021-10-14T07:08:09-07:00",
+    "input_file": "welcome.knit.md"
   },
   {
     "path": "posts/people_list/",
