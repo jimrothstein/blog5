@@ -1488,6 +1488,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>REF: Gillespie, Lovelace pg63</li>
 <li>One use: closure (function + env) is way to CACHE variables.</li>
 </ul>
+<p>When I first started hearing words <code>closure</code>, <code>environment</code> or even <code>lambda</code> I startd getting confused. Actually, the basic ideas can be grasped without needed to understand the fancy words.</p>
+<p>All we need to know is that the variable <code>start_time</code> remains available to self$stop, when ever this function is called, ie <code>start_time</code> is cached.</p>
+<p>Normally, when a function finishes execution like <code>stopwatch</code> below all of its variables disappear. So if self$stop is run much later, it normally would not have access to <code>start_time</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># cache start_time</span>
@@ -1518,18 +1521,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
             <span class='va'>watch</span><span class='op'>$</span><span class='fu'>current</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>Time difference of 0.00148 secs</code></pre>
+<pre><code>Time difference of 0.00144 secs</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r">            <span class='va'>watch</span><span class='op'>$</span><span class='kw'>stop</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>Time difference of 0.00328 secs</code></pre>
+<pre><code>Time difference of 0.00323 secs</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r">        <span class='va'>watch1</span><span class='op'>$</span><span class='kw'>stop</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>Time difference of 0.0213 secs</code></pre>
+<pre><code>Time difference of 0.035 secs</code></pre>
 </div>
+<p>Looking under the hood, there is a little more complexity that a programmer use efficiently. That is where the fancy words come in.</p>
+<p>I found these couple of stackoverflow answers clarified many of the meanings. Then things became much clearer.</p>
+<ul>
+<li><a href="https://stackoverflow.com/a/36879264/5057251" class="uri">https://stackoverflow.com/a/36879264/5057251</a></li>
+</ul>
+<p>Below, the variable start_time is cached for future use by the function self$stop(). Normally, once a</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
