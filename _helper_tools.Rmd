@@ -63,6 +63,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
   # used copy & paste of files
   rmarkdown::render("~/code/blog5/_posts/2021-08-14-install-notes/R_setup_environment.Rmd")
+  rmarkdown::render("~/code/blog5/_posts/R_setup_environment/R_setup_environment.Rmd")
   rmarkdown::render("~/code/blog5/_posts/random-R-notes/useful_base_R.Rmd")
 
   rmarkdown::render("~/code/blog5/_posts/reading_list/reading_list.Rmd")

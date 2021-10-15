@@ -1,13 +1,10 @@
 ---
-title: "post_upgrade_notes"
+title: "R_upgrade_notes"
 description: |
   Environment variables and R install. 
 author:
   - name: Jim
-
-date: "`r paste('last updated', 
-    format(lubridate::now(), ' %d %B %Y'))`"
-#date: 08-14-2021
+date: 08-14-2021
 output:
   distill::distill_article:
     self_contained: false

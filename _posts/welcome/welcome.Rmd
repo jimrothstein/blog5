@@ -1,13 +1,13 @@
 ---
 title: "Welcome to blog5"
 description: |
-  Blog about things I found interesting in R.
+  A few things I found interesting in R.
 author:
   - name: Jim 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date:  "9/5/2021"
+    url: 
+    affiliation: 
+    affiliation_url: 
+date:  "6/5/2021"
 #date:   `r date() `
 #date:  "`r format(Sys.Date(), "%B %d %Y")`"
 output:
