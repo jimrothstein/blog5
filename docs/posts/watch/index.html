@@ -2101,8 +2101,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <h4 id="why-closure-stopwatch-example">Why Closure, StopWatch example:</h4>
 <ul>
 <li>REF: Gillespie, Lovelace pg63</li>
-<li>One use: closure (function + env) is way to CACHE variables.</li>
+<li>One use: closure (function + env) is way to CACHE variables. From R Language:</li>
 </ul>
+<p><a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.html" class="uri">https://cran.r-project.org/doc/manuals/r-release/R-lang.html</a> 2.1.5 Function Objects:</p>
+<blockquote>
+<p>A function’s environment is the environment that was active at the time that the function was created. Any symbols bound in that environment are captured and available to the function. This combination of the code of the function and the bindings in its environment is called a ‘function closure’,</p>
+</blockquote>
 <h4 id="why-closure-stopwatch-example-1">Why Closure, StopWatch example:</h4>
 <ul>
 <li>REF: Gillespie, Lovelace pg63</li>
@@ -2141,17 +2145,17 @@ document.addEventListener('DOMContentLoaded', function() {
             <span class='va'>watch</span><span class='op'>$</span><span class='fu'>current</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>Time difference of 0.00144 secs</code></pre>
+<pre><code>Time difference of 0.00141 secs</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r">            <span class='va'>watch</span><span class='op'>$</span><span class='kw'>stop</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>Time difference of 0.00323 secs</code></pre>
+<pre><code>Time difference of 0.00374 secs</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r">        <span class='va'>watch1</span><span class='op'>$</span><span class='kw'>stop</span><span class='op'>(</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>Time difference of 0.035 secs</code></pre>
+<pre><code>Time difference of 0.0588 secs</code></pre>
 </div>
 <p>Looking under the hood, there is a little more complexity that a programmer use efficiently. That is where the fancy words come in.</p>
 <p>I found these couple of stackoverflow answers clarified many of the meanings. Then things became much clearer.</p>

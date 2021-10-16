@@ -18,7 +18,15 @@ knitr::opts_chunk$set(echo = T)
 ####  Why Closure, StopWatch example:
   *  REF:  Gillespie, Lovelace   pg63
   *  One use:  closure (function + env) is way to CACHE variables.
+    From R Language:
 
+https://cran.r-project.org/doc/manuals/r-release/R-lang.html
+2.1.5 Function Objects:
+
+>  A function’s environment is the environment that was active at the time that
+>  the function was created. Any symbols bound in that environment are captured
+>  and available to the function. This combination of the code of the function and
+>  the bindings in its environment is called a ‘function closure’,
 ```{r watch, child=c("~/code/try_things_here/ADVANCED_R/BOOK/0700_why_closure_stopwatch.Rmd")}
 ```
 
