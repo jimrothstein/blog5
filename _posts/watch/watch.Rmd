@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = T)
 ####  Why Closure, StopWatch example:
   *  REF:  Gillespie, Lovelace   pg63
   *  One use:  closure (function + env) is way to CACHE variables.
-    From R Language:
+    From 'R Language Definition':
 
 https://cran.r-project.org/doc/manuals/r-release/R-lang.html
 2.1.5 Function Objects:
