@@ -72,6 +72,7 @@ knitr::opts_chunk$set(echo = TRUE,
   rmarkdown::render("~/code/blog5/_posts/watch/watch.Rmd")
 
   # slow, if big file
+  ## Given a html file, still must create a stub Rmd file, process (same as Welcome)
   rmarkdown::render("~/code/blog5/_posts/bookmark_list/bookmarks.Rmd")
 
 
