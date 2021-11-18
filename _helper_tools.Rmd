@@ -71,6 +71,11 @@ knitr::opts_chunk$set(echo = TRUE,
   rmarkdown::render("~/code/blog5/_posts/publish_project/latex_trees.Rmd")
   rmarkdown::render("~/code/blog5/_posts/watch/watch.Rmd")
 
+  # slow, if big file
+  rmarkdown::render("~/code/blog5/_posts/bookmark_list/bookmarks.Rmd")
+
+
+
   
 
 # ==================
