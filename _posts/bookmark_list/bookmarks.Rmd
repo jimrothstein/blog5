@@ -15,8 +15,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r}
-knitr::include_url("~/code/blog5/bookmarks.html")
+```{r, echo=FALSE}
+knitr::include_url("bookmarks.html")
 ```
 
 
