@@ -1,20 +1,20 @@
 [
   {
     "path": "posts/bookmark_list/",
-    "title": "Bookmarks",
-    "description": "JR bookmarks",
+    "title": "Untitled",
+    "description": "A new article created using the Distill format.",
     "author": [
       {
-        "name": "Jim",
-        "url": {}
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
       }
     ],
-    "date": "2021-11-18",
+    "date": "2021-11-19",
     "categories": [],
-    "contents": "\nbookmarks\n\n\n\n\n",
+    "contents": "\njr_links.html\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-11-19T20:17:43-08:00",
-    "input_file": {}
+    "last_modified": "2021-11-19T20:27:15-08:00",
+    "input_file": "bookmarks.knit.md"
   },
   {
     "path": "posts/watch/",

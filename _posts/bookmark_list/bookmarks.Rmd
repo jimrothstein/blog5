@@ -1,28 +1,24 @@
 ---
-title: "Bookmarks"
+title: "Untitled"
 description: |
-  JR bookmarks
+  A new article created using the Distill format.
 author:
-  - name: Jim
-date: 11-18-2021
-output:
-  distill::distill_article:
-    self_contained: false
+  - name: Nora Jones 
+    url: https://example.com/norajones
+    affiliation: Spacely Sprockets
+    affiliation_url: https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: distill::distill_article
 ---
-
-
-[bookmarks](bookmarks.html)
-
+[jr_links.html](jr_links.html)
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<!-- 
+Distill is a publication format for scientific and technical writing, native to the web. 
 
-```{r, echo=FALSE}
-knitr::include_url("bookmarks.html")
-```
--->
+Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+
 
 
 
