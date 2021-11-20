@@ -11,13 +11,18 @@ output:
 ---
 
 
+[bookmarks](bookmarks.html)
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<!-- 
+
 ```{r, echo=FALSE}
 knitr::include_url("bookmarks.html")
 ```
+-->
 
 
 
